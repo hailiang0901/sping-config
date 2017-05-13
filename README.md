@@ -1,4 +1,4 @@
-# sping-config
+# hfconfigserver
 
 ## hf-framework组件层次:
 - hdmap ---------------->项目名称
