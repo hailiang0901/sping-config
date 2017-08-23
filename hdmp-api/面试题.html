@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="http://mdp.tylingsoft.com/bower_components/github-markdown-css/github-markdown.css"/>
+<link rel="stylesheet" href="http://mdp.tylingsoft.com/bower_components/font-awesome-min/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="http://mdp.tylingsoft.com/bower_components/ionicons-min/css/ionicons.min.css"/>
+<link rel="stylesheet" href="http://mdp.tylingsoft.com/bower_components/katex-build/katex.min.css"/>
+<link rel="stylesheet" href="http://mdp.tylingsoft.com/markdown-plus.css"/>
+<script src="http://mdp.tylingsoft.com/bower_components/jquery-dist/jquery.min.js"></script>
+<script src="http://mdp.tylingsoft.com/bower_components/ace-min-noconflict/ace.js" charset="utf-8"></script>
+<script src="http://mdp.tylingsoft.com/bower_components/ace-min-noconflict/ext-static_highlight.js"></script>
+<script src="http://mdp.tylingsoft.com/bower_components/katex-build/katex.min.js"></script>
+<script>$(function(){ $('img[src^="bower_components/emoji-icons/"]').each(function(){ $(this).attr('src', 'http://mdp.tylingsoft.com/' + $(this).attr('src')); }); });</script>
+</head><body><article class="markdown-body" id="preview" data-open-title="Hide Preview" data-closed-title="Show Preview"><h2 id="-java-" data-line="1">第一、java基础</h2>
+<ol>
+<li>Object有哪些方法，各自的作用</li>
+<li>equals和hashcode这些方法怎么使用的</li>
+<li>集合collection框架的认识和了解？—&gt;有哪些接口、实现有哪些、区别和联系</li>
+<li><p>HashMap的实现原理？</p>
+<pre><code><div class="ace-github"><div class="ace_static_highlight" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_identifier"><span class="ace_cjk" style="width:20px">什</span><span class="ace_cjk" style="width:20px">么</span><span class="ace_cjk" style="width:20px">时</span><span class="ace_cjk" style="width:20px">候</span>rehash<span class="ace_cjk" style="width:20px">、</span>reHash</span><span class="ace_cjk" style="width:20px">机</span><span class="ace_cjk" style="width:20px">制</span><span class="ace_cjk" style="width:20px">、</span><span class="ace_cjk" style="width:20px">多</span><span class="ace_cjk" style="width:20px">线</span><span class="ace_cjk" style="width:20px">程</span><span class="ace_cjk" style="width:20px">情</span><span class="ace_cjk" style="width:20px">况</span><span class="ace_cjk" style="width:20px">下</span><span class="ace_cjk" style="width:20px">出</span><span class="ace_cjk" style="width:20px">现</span><span class="ace_cjk" style="width:20px">什</span><span class="ace_cjk" style="width:20px">么</span><span class="ace_cjk" style="width:20px">情</span><span class="ace_cjk" style="width:20px">况</span><span class="ace_cjk" style="width:20px">？</span>
+</div><div class="ace_line">&nbsp;<span class="ace_identifier">hash<span class="ace_cjk" style="width:20px">冲</span><span class="ace_cjk" style="width:20px">突</span><span class="ace_cjk" style="width:20px">如</span><span class="ace_cjk" style="width:20px">何</span><span class="ace_cjk" style="width:20px">处</span><span class="ace_cjk" style="width:20px">理</span><span class="ace_cjk" style="width:20px">的</span><span class="ace_cjk" style="width:20px">（</span>JDk7<span class="ace_cjk" style="width:20px">以</span><span class="ace_cjk" style="width:20px">下</span><span class="ace_cjk" style="width:20px">和</span>JDK8</span><span class="ace_cjk" style="width:20px">啥</span><span class="ace_cjk" style="width:20px">区</span><span class="ace_cjk" style="width:20px">别</span><span class="ace_cjk" style="width:20px">）</span>
+</div><div class="ace_line">&nbsp;<span class="ace_identifier"><span class="ace_cjk" style="width:20px">扩</span><span class="ace_cjk" style="width:20px">容</span><span class="ace_cjk" style="width:20px">为</span><span class="ace_cjk" style="width:20px">啥</span><span class="ace_cjk" style="width:20px">是</span><span class="ace_cjk" style="width:20px">原</span><span class="ace_cjk" style="width:20px">来</span><span class="ace_cjk" style="width:20px">的</span>2<span class="ace_cjk" style="width:20px">倍</span><span class="ace_cjk" style="width:20px">而</span><span class="ace_cjk" style="width:20px">不</span><span class="ace_cjk" style="width:20px">是</span>3<span class="ace_cjk" style="width:20px">倍</span>4</span><span class="ace_cjk" style="width:20px">倍</span><span class="ace_cjk" style="width:20px">？</span>
+</div></div></div></code></pre></li>
+<li><p>ConcurrentHashMap实现机制，和HashMap区别</p>
+</li>
+<li>Concurrent包中CAS的原理</li>
+<li>volatile原理是什么，解决什么问题 </li>
+<li>Lock、Synchronized区别联系</li>
+<li>ThreadLocl原理，使用它的注意事项</li>
+<li>启动线程的几种方式，如何在编程中选择</li>
+<li>IO 和 NIO区别</li>
+<li>类加载机制</li>
+<li>GC算法、分代垃圾回收算法</li>
+<li>GC日常调优方案和思路</li>
+<li>Spring IOC和AOP的理解，相对于直接创建对象的优点</li>
+<li>Spring AOP的实现原理，常用的使用场景？</li>
+<li>Spring 事务管理器实现原理，</li>
+<li>事务传播机制有哪些</li>
+<li>事务ACID四大特，并解释具体业务含义</li>
+<li>设计模式：单例、工厂模式、代理模式、门面模式等</li>
+<li>ORM了解哪些，有什么特性</li>
+<li>PreparedStatement 和 Statement区别是什么</li>
+<li>JAVA中怎么防止SQL注入</li>
+</ol>
+<h2 id="mysql-" data-line="30">MYSQL:</h2>
+<ol>
+<li>事务隔离级别有哪些,Mysql默认多少</li>
+<li>乐观锁 悲观锁概念和区别</li>
+<li>存储模型有哪些，各种优缺点是什么</li>
+<li>聚簇索引和非聚簇索引概念</li>
+<li>SQL优化一般如何做（sechema设计层面、索引层， sql层上解答）</li>
+</ol>
+<h2 id="elasticsearch" data-line="37">ElasticSearch</h2>
+<ol>
+<li>Lucene 相似度评分原理、常用分词算法（前缀树、后缀树）</li>
+<li>ES优点、ES特性</li>
+</ol>
+<h2 id="redis" data-line="41">Redis</h2>
+<ol>
+<li>Redis支持的数据类型有哪些</li>
+<li>Redis 最适合的业务场景</li>
+<li>Redis 事务实现原理</li>
+</ol>
+<h2 id="web-" data-line="46">WEB开发</h2>
+<ol>
+<li>servlet是线程安全的么？为什么</li>
+<li>servlet、filter、lister 在容器中启动顺序，为什么这样设计</li>
+<li>200，202，304，302，301，404，405，409，500 http状态码分别表示什么</li>
+<li>304状态实现web容器实现原理</li>
+<li>Cookie 和 HttpSession区别联系</li>
+<li>HttpSession分布式共享方案</li>
+</ol>
+<h2 id="linux-" data-line="54">Linux：</h2>
+<ol>
+<li>查看日志你是如何查看</li>
+<li>如何查找特定exeception信息</li>
+<li>如何查看OS的网络</li>
+</ol>
+<h2 id="-" data-line="59">算法：</h2>
+<ol>
+<li>字符串翻转： QAZwsx123 -翻转-&gt;321xswZAQ</li>
+<li>快速排序</li>
+<li>LRUCache实现</li>
+<li>多叉树遍历</li>
+<li>背包问题</li>
+<li>一致性Hash算法，优缺点</li>
+</ol>
+</article></body></html>
